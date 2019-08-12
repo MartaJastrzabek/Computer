@@ -1,7 +1,7 @@
 import javax.naming.LimitExceededException;
 
 public class Processor extends IncreaseCloaking {
-    private static int TEMP_INCREASE_VALUE = 10;
+    private static final int TEMP_INCREASE_VALUE = 10;
     public Processor() {
     }
 
@@ -11,10 +11,6 @@ public class Processor extends IncreaseCloaking {
 
     public static int getTempIncreaseValue() {
         return TEMP_INCREASE_VALUE;
-    }
-
-    public static void setTempIncreaseValue(int tempIncreaseValue) {
-        TEMP_INCREASE_VALUE = tempIncreaseValue;
     }
 
     @Override

@@ -2,7 +2,7 @@ import javax.naming.LimitExceededException;
 
 public class Ram extends IncreaseCloaking {
     private int quantity;
-    private static int TEMP_INCREASE_VALUE = 15;
+    private static final int TEMP_INCREASE_VALUE = 15;
 
     public Ram() {
     }
@@ -24,9 +24,6 @@ public class Ram extends IncreaseCloaking {
         return TEMP_INCREASE_VALUE;
     }
 
-    public static void setTempIncreaseValue(int tempIncreaseValue) {
-        TEMP_INCREASE_VALUE = tempIncreaseValue;
-    }
 
     @Override
     public String toString() {
