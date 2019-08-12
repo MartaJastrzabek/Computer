@@ -1,5 +1,3 @@
-import javax.naming.LimitExceededException;
-
 public class Ram extends IncreaseCloaking {
     private int quantity;
     private static final int TEMP_INCREASE_VALUE = 15;
